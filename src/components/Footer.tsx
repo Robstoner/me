@@ -36,8 +36,8 @@ function FooterSocialLinks() {
 export default function Footer({ menus }: { menus: MenuColumn[] }) {
   return (
     <footer>
-      <div className="mx-auto max-w-7xl">
-        <div className="grid grid-cols-2 md:grid-cols-4">
+      <div className="mx-auto px-20 max-w-7xl ">
+        <div className="grid grid-cols-2 md:grid-cols-4 mt-2">
           <div className="col-span-2 md:col-span-1">
             <div className="flex flex-shrink-0 justify-start">
               <a
@@ -66,8 +66,8 @@ export default function Footer({ menus }: { menus: MenuColumn[] }) {
           ))}
         </div>
         <div className="text-xs py-3">
-          &copy; Copyright {new Date().getFullYear()} Schmidt Robert. Toate drepturile
-          rezervate.
+          &copy; Copyright {new Date().getFullYear()} Schmidt Robert. Toate
+          drepturile rezervate.
         </div>
       </div>
     </footer>

@@ -18,7 +18,7 @@ export default function Navbar({ menuItems }: { menuItems: MenuItem[] }) {
     <nav>
       <Disclosure
         as="nav"
-        className="transparent backdrop-blur-bg fixed w-full top-0 shadow shadow-gray-100 dark:shadow-gray-800"
+        className="transparent backdrop-blur-bg fixed w-full top-0 bg-black shadow shadow-gray-100 dark:shadow-gray-800"
       >
         {({ open }) => (
           <>

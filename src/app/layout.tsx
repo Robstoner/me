@@ -1,9 +1,8 @@
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import "@/styles/globals.css";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import clsx from "clsx";
+import { Footer, Navbar } from "@/components";
 
 const poppins = Poppins({ style: "normal", weight: "400", subsets: ["latin"] });
 
@@ -49,7 +48,7 @@ export default function RootLayout({
       >
         <Navbar menuItems={nav} />
         {children}
-        <Footer menus={footer}/>
+        <Footer menus={footer} />
       </body>
     </html>
   );
