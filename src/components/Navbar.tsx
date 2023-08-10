@@ -35,11 +35,13 @@ export default function Navbar({ menuItems }: { menuItems: MenuItem[] }) {
                   </Disclosure.Button>
                 </div>
                 <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                  <div className="flex flex-shrink-0 items-center px-3">
-                    <a className="text-cyan-400" href="/">Schmidt Robert</a>
-                  </div>
                   <div className="flex flex-shrink-0 items-center">
-                    <div>image</div>
+                    <a
+                      href="/"
+                      className="ml-2 text-cyan-400 font-bold tracking-wide"
+                    >
+                      Schmidt Robert
+                    </a>
                   </div>
                   <div className="hidden sm:ml-6 sm:block">
                     <div className="flex space-x-2">
@@ -51,7 +53,7 @@ export default function Navbar({ menuItems }: { menuItems: MenuItem[] }) {
                             isActivePath(item.href, pathname)
                               ? "dark:text-gray-200 text-black font-semibold"
                               : "text-cyan-500 dark:hover:text-white hover:text-black",
-                            "px-3 py-2 rounded-md text-sm font-medium transition-all duration-200"
+                            "px-3 py-2 rounded-md font-medium transition-all duration-200"
                           )}
                           aria-current={
                             isActivePath(item.href, pathname)

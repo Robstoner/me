@@ -20,6 +20,20 @@ const nav = [
   { name: "Playground", href: "/playground" },
 ];
 
+const footer = [
+  {
+    title: "Meniu",
+    items: nav,
+  },
+  {
+    title: "Legal",
+    items: [
+      { name: "Politica de confidentialitate", href: "/" },
+      { name: "Politica de cookie-uri", href: "/" },
+    ],
+  },
+];
+
 export default function RootLayout({
   children,
 }: {
@@ -35,7 +49,7 @@ export default function RootLayout({
       >
         <Navbar menuItems={nav} />
         {children}
-        <Footer />
+        <Footer menus={footer}/>
       </body>
     </html>
   );

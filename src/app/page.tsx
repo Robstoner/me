@@ -2,8 +2,8 @@
 export default function Home() {
 
   return (
-    <main >
-      work
+    <main>
+      <div className="h-[1000px]">work</div>
     </main>
-  )
+  );
 }
