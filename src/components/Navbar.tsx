@@ -18,12 +18,12 @@ export default function Navbar({ menuItems }: { menuItems: MenuItem[] }) {
     <nav>
       <Disclosure
         as="nav"
-        className="transparent backdrop-blur-bg fixed w-full top-0 bg-black shadow shadow-gray-100 dark:shadow-gray-800"
+        className="transparent backdrop-blur-bg fixed w-full top-0 shadow shadow-gray-100 dark:shadow-gray-800"
       >
         {({ open }) => (
           <>
             <div className="mx-auto max-w-7xl">
-              <div className="relative flex h-20 items-center justify-between">
+              <div className="relative flex h-16 items-center justify-between">
                 <div className="sm:hidden absolute inset-y-0 right-0 flex items-center">
                   <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-cyan-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white transition-all">
                     <span className="sr-only">Open main menu</span>
@@ -38,7 +38,7 @@ export default function Navbar({ menuItems }: { menuItems: MenuItem[] }) {
                   <div className="flex flex-shrink-0 items-center">
                     <a
                       href="/"
-                      className="ml-2 text-cyan-400 font-bold tracking-wide"
+                      className="ml-2 text-lg text-purple-600 font-bold tracking-wide"
                     >
                       Schmidt Robert
                     </a>

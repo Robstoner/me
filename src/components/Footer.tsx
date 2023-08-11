@@ -35,19 +35,21 @@ function FooterSocialLinks() {
 
 export default function Footer({ menus }: { menus: MenuColumn[] }) {
   return (
-    <footer>
-      <div className="mx-auto px-20 max-w-7xl ">
+    <footer className="shadow-[0_-1px_3px_0] shadow-gray-100 dark:shadow-gray-800">
+      <div className="mx-auto px-20 max-w-7xl">
         <div className="grid grid-cols-2 md:grid-cols-4 mt-2">
           <div className="col-span-2 md:col-span-1">
             <div className="flex flex-shrink-0 justify-start">
               <a
                 href="/"
-                className="ml-2 text-cyan-400 font-bold tracking-wide"
+                className="ml-2 text-purple-600 font-bold tracking-wide"
               >
                 Schmidt Robert
               </a>
             </div>
-            <p className="">Meeting your software development needs.</p>
+            <p className="text-sm text-cyan-600">
+              Creating the backbone of the internet.
+            </p>
             <FooterSocialLinks />
           </div>
           {menus.map((menu, index) => (
@@ -57,7 +59,7 @@ export default function Footer({ menus }: { menus: MenuColumn[] }) {
                 <Link
                   href={item.href}
                   key={index}
-                  className="rounded-md text-sm font-medium transition-all text-cyan-500 hover:text-gray-800 dark:hover-text-gray-200"
+                  className="rounded-md text-sm font-medium transition-all text-cyan-600 hover:text-gray-800 dark:hover-text-gray-200"
                 >
                   {item.name}
                 </Link>
